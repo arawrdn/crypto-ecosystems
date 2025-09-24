@@ -36,7 +36,7 @@ There is a domain specific language (DSL) containing the keywords that can make 
 migrations/YYYY-MM-DDThhmmss_description_of_your_migration
 ```
 
-The datetime format is a loosely ISO8601 but without the ':' characters to make them valid files on Windows.
+The datetime format is a losely ISO8601 but without the ':' characters to make them valid files on Windows.
 
 Some examples migration filenames could be:
 ```bash
@@ -51,12 +51,12 @@ Simply create your new migration and add changes to the taxonomy using the keywo
 ### Example: Adding an ecosystem and connecting it.
 ```lua
 -- Add ecosystems with the ecoadd keyword.  You can start a line with -- to denote a comment.
-ecoadd Lightning
+eco-add Lightning
 -- Add repos to ecosystems using the repadd keyword
 repadd Lightning https://github.com/lightningnetwork/lnd #protocol
 -- Connect ecosystems using the ecocon keyword.
 -- The following connects Lighting as a sub ecosystem of Bitcoin.
-ecocon Bitcoin Lighting
+ecocon Bitcoin Lighting.
 ```
   
 ## How to Give Attribution For Usage of the Electric Capital Crypto Ecosystems
@@ -83,4 +83,4 @@ Data Source: [Electric Capital Crypto Ecosystems](https://github.com/electric-ca
 
 If you’re working in open source crypto, submit your repository [here](https://github.com/electric-capital/crypto-ecosystems) to be counted.
 
-Thank you for contributing and for reading the contribution guide! ❤️
+Thank you for contributing and for reading the contribution guide! ❤️❤️
